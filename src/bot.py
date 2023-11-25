@@ -16,7 +16,7 @@ dp = Dispatcher()
 commands = Commands().commands
 right_ans = 0
 wrong_ans = 0
-mistake = "Sorry, I can't understand your message. Don't forget to put\'-\' between word and translation. Please try again /add_eng_words"
+mistake = "Sorry, I can't understand your message. Don't forget to put\'-\' between word and translation. Please try again /add_words"
 
 # Создаем обработчики для команд
 #функция для команды /start

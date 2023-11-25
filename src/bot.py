@@ -191,8 +191,9 @@ async def check_word_from_list_command(message):
     else:
         await message.answer(f"No. It is \"{rus_word}\".")
     random_word = random.choice(lists[id])
-    while random_word == lang_message.lang.learn_list[id]:
-        random_word = random.choice(lists[id])
+    if len(lists[id]) != 1:
+        while random_word == lang_message.lang.learn_list[id]:
+            random_word = random.choice(lists[id])
     lang_message.lang.learn_list[id] = random_word
     await message.answer("Next word: "+random_word)
 

@@ -1,0 +1,1 @@
+export BOT_TOKEN='6693715067:AAGv9eQt-PGmfhwVvLcpLAa7x7iWm0wQb7Y'
